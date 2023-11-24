@@ -1,5 +1,6 @@
 - name: list all 
   hosts: all
+  gather_facts: false
   tasks:
     - name: Print message
       debug:
