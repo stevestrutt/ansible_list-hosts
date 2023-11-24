@@ -5,3 +5,13 @@
     - name: Print message
       debug:
         msg: Hello Ansible World - {{ ansible_host }}
+
+
+
+- name: list local
+  hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Print message
+      debug:
+        msg: Hello Ansible World - {{ ansible_hostname }}        
